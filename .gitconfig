@@ -1,0 +1,5 @@
+[user]
+	name = onodera_takumi
+	email = takumi.onodera@drecom.co.jp
+[core]
+	excludesfile = /Users/onodera_takumi/.gitignore
