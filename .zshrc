@@ -85,3 +85,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias updatedb='sudo /usr/libexec/locate.updatedb'
+alias diffcop='rubocop $( git diff --name-only --diff-filter=AMRC | grep -e ".*\.rb" | paste -s - )'
+
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+
+path=($HOME/.swiftenv/bin(N-/) $path)
+if which swiftenv > /dev/null; then
+  eval "$(swiftenv init - zsh)"
+fi
